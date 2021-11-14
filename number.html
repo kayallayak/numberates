@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="./number.css">
+</head>
+<body class="body">
+    <h1 style="font-size: 30px;">NUMBER OF ATTEMPTS</h1>
+    <div  class="circle">10</div>
+    <marquee direction="down"><h1 class="center">NUMBER GUESSING GAME</h1><br></marquee>
+    <div class="box center1" style="text-align: center;">
+        <p>GUESS A NUMBER BETWEEN 1 TO 100</p>
+        <div class="form">
+            <label for="guessField">ENTER THE NUMBER: </label>
+            <form action="">
+                <input type="text" id="guessField" class="guessField" required>
+                <button type="submit" value="Submit guess" class="btn center1 guessSubmit" id="submitguess">CHECK</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var y = Math.floor(Math.random() * 10 + 1);
+        var guess = 1;
+        document.getElementById("submitguess").onclick = function () {
+            var x = document.getElementById("guessField").value;
+            if (x == y) {
+                alert("CONGRATULATIONS!!! YOU HAVE WON THE GAME ");
+            }
+            else if (x > y){
+                guess++;
+                alert("TRY A SMALLER NUMBER");
+            }
+            else {
+                guess++;
+                alert("TRY A GREATER NUMBER")
+            }
+
+        }
+    </script>
+</body>
+</html>

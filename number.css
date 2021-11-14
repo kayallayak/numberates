@@ -1,0 +1,124 @@
+:root {
+    --primary: rgb(255, 166, 0);
+    --secondary: rgb(255, 0, 149);
+    --dark: black;
+    --light: white;
+}
+
+/* #grad {
+    background-image: linear-gradient(to right,var(--secondary),var(--primary));
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+}
+
+.body{
+    background: linear-gradient(to right,var(--secondary),var(--primary));
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px; 
+    color: rgb(9, 12, 12);
+    font-size: 50px;
+}
+
+.center1{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.box , .prompt_box{
+    width: 500px;
+    height: 200px;
+    background: white;
+    flex-direction: column;
+}
+
+.small_circle_1{
+    width : 100px;
+    height : 100px;
+    border-radius : 50%;
+    background: rgb(243, 240, 240);
+    position : absolute;
+    top : -25px;
+    left : 15px;
+    margin-top: 100px;
+}
+
+.box :is( h1, p, form) {
+    margin: 8px;
+}
+
+form{
+    flex-direction: column;
+}
+
+form input{
+    margin-bottom: 8px;
+    width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.btn{
+    width: 150px;
+    border-radius: 25px;
+    background-color: green;
+    height: 35px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.leftalign{
+    text-align: right;
+}
+
+.circle {
+    margin-top: 25px;
+    margin-left: 120PX;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    background: rgb(231, 142, 209);
+    border: 0px solid #000;
+    color: rgb(238, 230, 230);
+    text-align: center;
+    font: 32px Arial, sans-serif;
+  }
+
+/* .prompt_box{
+    width: 500px;
+    height: 400px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prompt_box h1{
+    margin-bottom: 10px;
+}
+
+.prompt_box.active{
+    width: 500px;
+    height: 400px;
+    display: flex;
+} */
